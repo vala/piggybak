@@ -16,9 +16,9 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,bin,config,db,lib,spec}/**/*"] + ["LICENSE", "Rakefile", "README.md","Gemfile","Gemfile.lock"]
   s.executables = s.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   s.test_files = Dir["spec/*"]
-  
+
   s.add_dependency "rails", "~> 3.2.8"
-  s.add_dependency "rails_admin", "~> 0.3.0"
+  s.add_dependency "rails_admin", "~> 0.4.0"
   s.add_dependency "countries"
   s.add_dependency "activemerchant"
   s.add_dependency "devise"
